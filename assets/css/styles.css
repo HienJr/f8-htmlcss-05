@@ -9,8 +9,10 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-style: normal;
     font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
 }
 
 /* --------------------------------------------------------------- common */
@@ -47,6 +49,7 @@ select {
 }
 
 .section-heading {
+    margin-top: 12px;
     color: #212832;
     font-family: "Open Sans";
     font-size: 4rem;
@@ -54,12 +57,17 @@ select {
     line-height: 1.25;
 }
 
-.desc {
+.desc-default {
     color: #696D76;
-    font-family: "Open Sans";
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
+}
+
+.desc-large {
+    color: #696D76;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
 
 .logo {
@@ -67,11 +75,27 @@ select {
     height: 24px;
 }
 
+.heading-sub {
+    color: #696D77;
+    display: flex;
+    align-items: center;
+}
+
+.heading-sub::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696D77;
+    margin-right: 12px;
+}
+
 /* --------------------------------------------------------------- header */
 .fixed {
     position: sticky;
     top: 0;
     z-index: 1;
+    background: #FFF;
 }
 
 .header {
@@ -141,7 +165,7 @@ select {
     scale: 1.03;
 }
 
-.login__btn:hover + .sign-up__btn {
+.login__btn:hover+.sign-up__btn {
     background: #FFF;
     color: #212832;
 }
@@ -150,4 +174,177 @@ select {
     padding: 12px 28px;
     font-weight: 600;
     line-height: 1.75;
+}
+
+/* --------------------------------------------------------------- hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+    width: 500px;
+}
+
+.hero__heading--bold {
+    color: #7264D6;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 540px;
+}
+
+.hero__form {
+    margin-top: 40px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8px 8px 8px 23px;
+}
+
+.hero__email {
+    color: #696D76;
+    border: none;
+    outline: none;
+    grid-column: 1 / 3;
+}
+
+.hero__submit--btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #7264D6;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero__submit--btn:hover {
+    scale: 1.03;
+}
+
+.email-consent {
+    margin-top: 20px;
+    color: #696D76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero-media {
+    position: relative;
+    padding-right: 174px;
+}
+
+.hero__deposit,
+.hero__secured,
+.hero__interest {
+    position: absolute;
+}
+
+.hero__deposit {
+    top: 103px;
+    left: -120px;
+}
+
+.hero__interest {
+    top: 130px;
+    right: 0;
+}
+
+.hero__secured {
+    right: 100px;
+    bottom: 67px;
+}
+
+/* --------------------------------------------------------------- work */
+.work {
+    margin-top: 160px;
+}
+
+.work-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__media {
+    position: relative;
+}
+
+.work__decor,
+.work__notify {
+    position: absolute;
+}
+
+.work__decor {
+    top: 76px;
+    right: 62px;
+}
+
+.work__notify {
+    bottom: 96px;
+    right: -100px;
+    padding: 15px 30px 15px 15px;
+    display: flex;
+    column-gap: 10px;
+    border-radius: 8px;
+    background: #FFFDFA;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work__notify-title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work__notify-desc {
+    margin-top: 5px;
+    color: #696D76;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work-text {
+    max-width: 470px;
+    padding-top: 29px;
+}
+
+.work__list {
+    margin-top: 70px;
+}
+
+.work__item+.work__item {
+    margin-top: 29px;
+}
+
+.item__title {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.46;
+}
+
+.work__item---desc {
+    margin-top: 16px;
 }
