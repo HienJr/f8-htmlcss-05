@@ -25,7 +25,6 @@ select {
 }
 
 .container {
-    padding-top: 40px;
     width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
@@ -99,6 +98,7 @@ select {
 }
 
 .header {
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -347,4 +347,135 @@ select {
 
 .work__item---desc {
     margin-top: 16px;
+}
+
+/* --------------------------------------------------------------- payment */
+.payment-body {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-text {
+    max-width: 470px;
+}
+
+.payment-desc {
+    margin-top: 20px;
+}
+
+.payment-list {
+    margin-top: 28px;
+}
+
+.payment-item {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.payment-item+.payment-item {
+    margin-top: 18px;
+}
+
+.payment-item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #7264D6;
+    border-radius: 50%;
+}
+
+.payment-btn {
+    margin-top: 38px;
+}
+
+.payment-media {
+    position: relative;
+}
+
+.payment-img {
+    margin-top: 58px;
+}
+
+.payment__ing--notify {
+    position: absolute;
+    right: -120px;
+}
+
+.payment__ing--income {
+    position: absolute;
+    bottom: 67px;
+    right: -88px;
+}
+
+/* --------------------------------------------------------------- transfer */
+
+.transfer {
+    margin-top: 160px;
+}
+
+.transfer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transfer-media {
+    position: relative;
+}
+
+.transfer-method {
+    position: absolute;
+    left: 215px;
+    bottom: -27px;
+}
+
+.transfer-decor {
+    position: absolute;
+    left: 440px;
+    bottom: 175px;
+}
+
+.transfer-text {
+    width: 470px;
+}
+
+.transfer-text {
+    padding-top: 50px;
+}
+
+.transfer-text__desc {
+    margin-top: 20px;
+}
+
+.transfer__list {
+    margin-top: 28px;
+}
+
+.transfer__item {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.transfer__item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #7264d6;
+    border-radius: 50%;
+}
+
+.transfer__btn {
+    margin-top: 38px;
 }
