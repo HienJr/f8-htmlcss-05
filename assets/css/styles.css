@@ -464,7 +464,11 @@ select {
     line-height: 1.67;
     display: flex;
     align-items: center;
-    column-gap: 12px;
+    gap: 12px;
+}
+
+.transfer__item+.transfer__item {
+    margin-top: 18px;
 }
 
 .transfer__item::before {
