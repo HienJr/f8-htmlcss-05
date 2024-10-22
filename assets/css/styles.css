@@ -149,7 +149,6 @@ select {
 .login__btn {
     display: inline-block;
     padding: 12px 28px;
-    border: 1px solid #212832;
     border-radius: 6px;
     color: #212832;
     text-align: center;
@@ -167,13 +166,11 @@ select {
 .login__btn:hover+.sign-up__btn {
     background: #FFF;
     color: #212832;
-    border: 1px solid #212832;
 }
 
 .sign-up__btn {
     padding: 12px 28px;
     font-weight: 600;
-    border: 1px solid #212832;
     display: inline-block;
     border-radius: 6px;
     background: #212832;
