@@ -736,7 +736,7 @@ select {
     margin-top: 24px;
 }
 
-.item__child a {
+.item__child__link {
     color: #6A6E78;
     font-size: 1.8rem;
     line-height: 1.67;
